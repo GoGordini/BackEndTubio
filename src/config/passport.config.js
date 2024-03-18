@@ -20,7 +20,7 @@ const initializePassport = () => {
     passport.use(passportStrategiesEnum.GITHUB, new GitHubStrategy({ //los 3 primeros parámetros salen de la app de git.
         clientID: 'Iv1.e0b3de4024dcd9c8',
         clientSecret: configs.gitHubClientSecret,
-        callbackURL: 'http://localhost:8080/api/sessions/github-callback',
+        callbackURL: 'http://backendtubio-production.up.railway.app/api/sessions/github-callback',
         scope: ['user:email'] //esto trae del usuario el email, con los que me estoy logueando en github.
     }, async (accessToken, refreshToken, profile, done) => { //los dos primeros por ahora no los uso, son para JWT.
         try {
