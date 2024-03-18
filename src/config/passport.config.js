@@ -18,9 +18,9 @@ const ExtractJWT = jwt.ExtractJwt; //define de dónde extrae el token de acceso.
 const initializePassport = () => {
     //Implementación de nuestro mecanismo de autenticación con github
     passport.use(passportStrategiesEnum.GITHUB, new GitHubStrategy({ //los 3 primeros parámetros salen de la app de git.
-        clientID: 'Iv1.e0b3de4024dcd9c8',
+        clientID: 'Iv1.871509820a1c3330',
         clientSecret: configs.gitHubClientSecret,
-        callbackURL: 'http://backendtubio-production.up.railway.app/api/sessions/github-callback',
+        callbackURL: 'https://backendtubio-production.up.railway.app/api/sessions/github-callback',
         scope: ['user:email'] //esto trae del usuario el email, con los que me estoy logueando en github.
     }, async (accessToken, refreshToken, profile, done) => { //los dos primeros por ahora no los uso, son para JWT.
         try {
