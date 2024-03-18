@@ -81,7 +81,7 @@ export const sendReset =  async(userEmail)=> {
         
             <div>               
                 <p>Haga clic en el siguiente botón para restablecer su contraseña:</p>
-                <a href="http://localhost:8080/reset" style="text-decoration: none; color: white;">
+                <a href="https://backendtubio-production.up.railway.app/reset" style="text-decoration: none; color: white;">
                     <button style="background-color: gray; color: #fff; padding: 10px; border: none; cursor: pointer;">Restablecer Contraseña</button>
                 </a>
             </div>        
